@@ -1,6 +1,24 @@
 # ToDoList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
+## Setting up
+1. run script in terminal `ng new ToDoList` answer the questions of script
+	> If the script could not complete within 5 minutes, 
+	>	. Stop it using keyboard key `CTRL + C`
+	>	. Change directory to `ToDoList` using command `CD ToDoList`, then run `npm install` and wait it to finish.
+2. Change directory to newly created project using command `CD ToDoList` if you are not yet in it
+3. Create a new component by running command `ng generate component ToDoItems`
+4. Create file `/src/app/to-do-item.ts` with content:
+	``` javascript
+	export class ToDoItem{
+	  id: number = 0;
+	  name: string = '';
+	  isComplete: boolean = false;
+	}
+	```
+5. Configure `ToDoItems` component to use class `ToDoItem`.
+6. update `/src/app/app.component.html` to use `<app-to-do-items></app-to-do-items>`
+7. run application `ng serve --open`
 
 ## Development server
 
